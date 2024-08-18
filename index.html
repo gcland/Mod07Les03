@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mod07Les03 Form</title>
+</head>
+<body>
+    <h2>Email Input</h2>
+    <form action="/submit" method="post">
+        <label for="user-email">Email (e.g jondoe@email.com):</label>
+        <input type="email" id="user-email" name="user-email" placeholder="Enter your email address (e.g jondoe@email.com)" required aria-required="true">
+        
+        <p></p>
+
+        <input type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Quantity Input</h2>
+        
+        <label for="quantity">Quantity 10 - 100, steps of 10:</label>
+        <input type="number"id="quantity"min="10"max="100"step="10" placeholder="10-100">
+    
+        <p></p>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Date Input</h2>
+        <label for="date">Date:</label>
+        <input type="date" id="date"name="date">
+        
+        <p></p>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Rating Input</h2>
+        
+        <label for="stars">Stars: (between 0 and 5):</label>
+        <input type="range" id="stars" name="stars" min="0" max="5"
+        oninput="rangeValue.innerText = this.value"> 
+        <p id="rangeValue"> 3 </p>
+
+        <p></p>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Color Input</h2>
+
+        <label for="favorite_color">Pick a color!</label>
+        <input type="color" id="favorite_color" name="favorite_color" value="#00ff00"> 
+
+        <p></p>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Development Selections</h2>
+    <p></p>
+
+    <form>
+        <div class="custom-select" style="width:100px;">
+            <select>
+              <option value="0">Select your favorite programming language:</option>
+              <option value="1">C#</option>
+              <option value="2">CSS</option>
+              <option value="3">Javascript</option>
+              <option value="4">Python</option>
+              <option value="5">React</option>
+              <option value="6">Typescript</option>
+            </select>
+          </div>
+
+          <p></p>
+          
+          <label>Level of Expertise:</label>
+          <input type="radio" id="beginner" name="expertise" value="beginner">
+          <label for="beginner">Beginner</label>
+          <input type="radio" id="intermediate" name="expertise" value="intermediate">
+          <label for="intermediate">Intermediate</label>
+          <input type="radio" id="advanced" name="expertise" value="advanced">
+          <label for="advanced">Advanced</label>
+
+          <p></p>
+
+          <label for="development_platform">Preferred Development Platform:</label>
+          <label for="web">Web</label>
+          <input type="checkbox" id="web"name="web"value="yes">
+          <label for="mobile">Mobile</label>
+          <input type="checkbox" id="mobile"name="mobile"value="yes">
+          <label for="desktop">Desktop</label>
+          <input type="checkbox" id="desktop"name="desktop"value="desktop">
+
+          <p></p>
+
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>    
+    </form>
+
+</body>
+</html>
